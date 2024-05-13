@@ -1,3 +1,4 @@
+Handwritten Math Equation Solver
 AIM of the Project
 As the name of the project suggests, we intend to make such a system(Web Interface) in which user will just upload his/her handwritten equation(s) and in return would get the solution to that.
 
@@ -21,3 +22,11 @@ Working of the Project:
 3. The uploaded image and the recognized equation and its solution is displayed below the upload button.
 
 ![image](https://github.com/Spandana550/Handwritten_Equation_Solver/assets/134623596/89b0adcb-ee1c-49e6-a168-04986ec4d564)
+![image](https://github.com/Spandana550/Handwritten_Equation_Solver/assets/134623596/0509030d-02d5-4291-a03f-585e50a8eb92)
+
+How to run:
+1.Download the zip file
+2.Setup Xampp server. Turn on Apache and Mysql
+3.In phpmyadmin create the database by importing the eqsolver.sql
+4.In the terminal , run "python app.py"
+5.Visit localhost:5000 to see the webpage
