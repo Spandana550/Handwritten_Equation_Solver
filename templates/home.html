@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation Solver</title>
+    <!-- <link rel="stylesheet" href="/styles/index.css"> -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+}
+.logo {
+    margin: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hero {
+    background-image: url('/static/images/image.png');
+    background-size: contain; /* Cover the entire background */
+    background-position: right; /* Align the background image to the right */
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left; /* Align text content to the left */
+    margin-right: 100px;
+}
+
+.hero-content {
+    max-width: 50%; /* Adjust the width of the content as needed */
+    margin-right: auto; /* Push content to the left */
+    padding-left: 20px; /* Add some left padding for spacing */
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    margin-top: 20px; /* Add margin to the button for spacing */
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.features {
+    padding: 80px 0;
+    background-color: #f0f0f0;
+}
+
+.features .container{
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: space-around; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+
+.feature {
+    width: 30%; /* Adjust the width of each feature item */
+    margin: 10px; /* Add margin around each item for spacing */
+    text-align: center;
+}
+
+.feature img {
+    width: 270px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Equation Solver</h1><br>
+            <nav class="nav">
+                <ul>
+                    <li><a style="color: #000;" href="#">Home</a></li>
+                    <li><a style="color: #000;"  href="about.html">About</a></li>
+                    <li><a style="color: #000;"  href="#">Services</a></li>
+                    <li><a style="color: #000;"  href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Solve Complex Equations with Ease</h2>
+            <p>Our equation solver helps you tackle mathematical challenges effortlessly.</p>
+            <a href="{{ url_for('register') }}" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <img src="/static/images/interface.jpg" alt="Icon 1">
+                <h3>Simple Interface</h3>
+                <p>Easy-to-use interface for inputting and solving equations.</p>
+            </div>
+            <div class="feature">
+                <img src="/static/images/fast.jpg" alt="Icon 2">
+                <h3>Fast Computation</h3>
+                <p>Quickly compute complex equations and get accurate results.</p>
+            </div>
+            <div class="feature">
+                <img src="/static/images/responsive.jpeg" alt="Icon 3">
+                <h3>Responsive Design</h3>
+                <p>Works seamlessly on desktop, tablet, and mobile devices.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Equation Solver. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
